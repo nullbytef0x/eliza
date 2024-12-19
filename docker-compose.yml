@@ -1,0 +1,9 @@
+services:
+  web:
+    image: httpd:lastest
+    ports:
+      - "8050:8050"
+    volumes:
+      - .:/usr/src/app
+    
+    
