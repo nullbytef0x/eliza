@@ -1,4 +1,4 @@
-version: "3.9"
+version: '3.9'
 
 services:
   web:
@@ -6,7 +6,4 @@ services:
     ports:
       - "8050:80"
     volumes:
-      - ./eliza:/usr/share/nginx/html
-
-volumes:
-  eliza:
+      - .:/usr/share/nginx/html
