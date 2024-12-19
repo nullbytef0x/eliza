@@ -1,9 +1,8 @@
 services:
   web:
-    image: httpd:lastest
+    image: nginx:alpine
     ports:
       - "8050:8050"
     volumes:
       - .:/usr/src/app
-    
     
