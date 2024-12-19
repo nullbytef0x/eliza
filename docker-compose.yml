@@ -1,9 +1,12 @@
-version: '3.8'
+version: "3.9"
 
 services:
   web:
     build: .
     ports:
-      - "80:80"
+      - "8050:80"
     volumes:
-      - .:/usr/share/nginx/html
+      - ./eliza:/usr/share/nginx/html
+
+volumes:
+  eliza:
