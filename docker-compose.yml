@@ -2,7 +2,7 @@ services:
   web:
     image: nginx:alpine
     ports:
-      - "8050:8050"
+      - "8050:80"
     volumes:
       - .:/usr/src/app
     
